@@ -1,0 +1,90 @@
+/** limpieza de los margin del navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** background general*/
+body{
+    background-color: #f3e5d8;
+}
+
+.container{
+    background-color: #ffff;
+    max-width: 80%;
+    border-radius: 30px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+}
+
+figure img{
+    width: 100%;
+}
+
+
+.title{
+    margin: 1.5rem 0;
+    font-size: 3rem;
+    font-style: inherit;
+}
+
+.paragrahp{
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.container-time{
+    margin: 2.5rem 0;
+    background-color: antiquewhite;
+    padding: 1.5rem 3rem;
+    border-radius: 20px;
+    line-height: 1.5;
+}
+
+.container-time .subtitle{
+    color: #4d0432;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.subtitle{
+    color: #9a4d09;
+    padding-bottom: 1rem 0;
+
+}
+
+/** Aplicando estilos a tres contenedores independientes*/
+.container-ingredients, 
+.container-instructions, 
+.container-nutrition{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-bottom: solid 1px #494545;
+}
+
+/** La pseudoclase is ayuda a englobar estilos para varios elementos*/
+:is(.ingredients-list, .instructions-list) li{
+    padding: 6px 10px;
+
+}
+
+.nutrition-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table tr{
+    border-bottom: solid 1px #494545;
+    text-align: center;
+}
+
+.nutrition-table td{
+    padding: 0.5rem 0;
+}
+
+.nutrition-table td:nth-child(2){
+    color: #9d0871;
+    font-weight: bold;
+}

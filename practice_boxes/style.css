@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** psudoclase :root-> global, sirver para definir variables
+goblales que vamos a usar, ejemplo declarar la semantica de 
+colores, tipo de fuentes*/
+:root{
+    --box-color: #09a824;
+    --secondary-color: #fff;
+    --font-family: 'Poppins', 'sans-sheriff';
+}
+
+.title{
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+
+
+.box{
+    background-color: var(--box-color);
+    width: 200px;
+    height: 200px;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/** LAS MEDIAS QUERYS SON LAS QUE VAN A AYUDAR ADAPTAR
+EL CONTENIDO A CIERTOS DISPOSITIVOS (CONDICIONES) */
+/**MEDIA QUERY CON RANGOS*/
+@media(min-width: 576px) and (max-width: 768px) {
+    .box{
+        background-color: chocolate;
+    }
+    
+    .title{
+        font-style: italic;
+    }
+}
+
+@media(max-width: 576px){
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 920px){
+    .flexbox{
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem; 
+        margin: 1rem 0; 
+    }
+    
+    .flex-container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem 
+    }
+    
+    
+    .gridbox{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+    
+    .gridbox .box:nth-child(1){
+        /** Primer Numero -> primera fila (inicio)
+            Segundo Numero -> donde vas a empezar a colocar la columna
+            Tercer Numero -> donde va terminar la fila (el numero 2 no se incluye)
+            Cuarto Numero -> donde va terminar la columna (el numero 3 no se incluye
+        */
+        grid-area: 1 / 1 / 2 / 3;
+        width: 100%;
+    }
+    
+    .gridbox .box:nth-child(3){
+        
+        grid-area: 1 / 4 / 2 / 6;
+        width: 100%;
+    }
+}

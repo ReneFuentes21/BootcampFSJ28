@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        /** ayuda a que no se colapsen las cajas con margin y padding*/
+        box-sizing: border-box;
+    }
+    /** aplicando estilos */
+    /** cuales son los selectores en css: clases, id, etiqueta, universal, atributo */
+    h1{
+        color: #f11128;
+    }
+
+    .title{
+        text-align: center;
+    }
+    #title{
+        /** rem es unidad de medida, otras medidas son px y em*/
+        font-size: 3rem; /** 1rem = 16px */
+    }
+
+    /** Atributo*/
+    a[href="#"]:hover{
+        color: aquamarine;
+    }
+
+    .container article{
+        background-color: #ff9ba5;
+        width: 200px;
+        height: 200px;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .container article:nth-child(4){
+        background-color: aqua;
+    }
+
+    /* pseudoelemento, agregamos un nuevo contenido al elemento*/
+    .hipervinculo:before{
+        content: "";
+    }
+
+    #caja1:hover{
+        background-color: blanchedalmond;
+    }
+</style>
+<body>
+    <h1 class="title" id="title">Introduccion al CSS </h1>
+    <a href="#" class="hipervinculo">Click Aqui</a>
+    <section class="container">
+        <h2 class="subtitle">Hola</h2>
+        <article id="caja1"></article>
+        <article id="caja2"></article>
+        <article id="caja3">
+            <h2>FSJ28 INCAF</h2>
+        </article>
+    </section>
+    <h2 class="title">FazbearJones</h2>
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+</body>
+</html>

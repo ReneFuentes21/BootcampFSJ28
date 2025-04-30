@@ -1,0 +1,34 @@
+.header {
+    position: relative;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Elimina cualquier background-image aquí */
+}
+
+.header__banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* Si quieres un filtro oscuro como el gradiente: */
+    /* filter: brightness(0.5); */
+}
+
+.header > .contenedor,
+.header__texto {
+    position: relative;
+    z-index: 2;
+}
+
+.header__texto {
+    text-align: center;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+}
