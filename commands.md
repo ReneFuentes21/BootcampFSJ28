@@ -28,3 +28,17 @@ git remoto -v
 
 **Agregamos repositorio remoto**
 git remote add origin <enlacederepositorio>
+
+### COMANDOS SOBRE RAMAS 
+
+**Listamos las ramas del repositorio**
+git branch
+
+**Creamos una nueva rama**
+git branch <nombredelarama>
+
+**Creamos una rama y a la vez accedemos a ella**
+git checkout -b <nombredelarama>
+
+**Cambiamos de rama**
+git checkout <rama>
