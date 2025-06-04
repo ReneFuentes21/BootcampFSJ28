@@ -54,3 +54,5 @@ let personaje3 = new Personaje("Superman", "Maasculino", "Metropolis", true);
 
 
 let personaje4 = new Personaje("Freddy Fazbear", "masculino", "Fazbear", true);
+
+
