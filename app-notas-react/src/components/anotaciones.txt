@@ -1,0 +1,15 @@
+props (propiedades)
+comparten datos de un componente a otro componente o al mismo componente.
+Las propiedades que se comparten son:
+    -Tipos de datos.
+    -Arreglos.
+    -Objetos.
+    -Funciones.
+    -Estados.
+
+Las propiedades de forma predeterminada solo le pueden pasa del componente padre al hijo, osea, de arriba para abajo
+
+Estados
+Un estado puede ser un objeto donde guarda informacion del componente.
+Los estados dan dinamismo al componente (Puede actualizar el componente).
+El estado solo trabaja en el componente donde se crea directamente.

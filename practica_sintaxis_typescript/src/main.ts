@@ -5,14 +5,14 @@ import { setupCounter } from './counter.ts'
 //import { name, isStudent } from './sintaxis.ts'
 //import { greeting2 } from './functions.ts'
 import { Estudiante } from './kodigo/estudiante.ts'
-//import { Coach, docente } from './kodigo/coach.ts'
+import { Coach, docente } from './kodigo/coach.ts'
 
 
-//let docente2 = new Coach ("Diego Martinez", 21, "Español", "diego@gmail.com", "Por Hora", "JavaDeveloper, FullStackJr, Data Analytics" , "[JavaScript, PHP, CSS]")
-//console.log(docente2.mostrarDetalles())
-//console.log(docente2)
-//console.log(docente.mostrarDetalles())
-//console.log(docente)
+let docente2 = new Coach ("Diego Martinez", 21, "Español", "diego@gmail.com", "Por Hora", ["JavaDeveloper, FullStackJr, Data Analytics"] , ["JavaScript, PHP, CSS"])
+console.log(docente2.mostrarDetalles())
+console.log(docente2)
+console.log(docente.mostrarDetalles())
+console.log(docente)
 let estudiante = new Estudiante("Rene Fuentes", 22, "El Salvador", "rene@gmail.com","becado" ,"Full Stack Jr.", "Activo");
 console.log(estudiante);
 //estudiante.setEstado("En clases")

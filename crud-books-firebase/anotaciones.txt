@@ -1,0 +1,11 @@
+HTTP = Hypertext Transfer Protocol (Protocol de Transferencia de Hipertexto)
+GET = Obtiene informacion
+POST = Envia informacion
+PUT = Actualiza toda la informacion del registro
+PATCH = Actualiza una parte del registro
+DELETE = Elimina informacion
+
+Consultas SQL
+SELECT: Indica las columnas que se desean recuperar.
+FROM: Especifica la tabla o tablas de donde se obtendrán los datos.
+WHERE: Aplica condiciones para filtrar los resultados.

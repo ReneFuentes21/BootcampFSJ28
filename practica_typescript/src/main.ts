@@ -1,24 +1,21 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+import { LibroRecetas } from './recetas/LibroRecetas.ts';
+import { Receta } from './recetas/receta.ts'
+import { RecetaDulce } from './recetas/receta_ducle.ts'
+import { RecetaSalada } from './recetas/receta_salada.ts'
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+let recetario = new LibroRecetas();
+let flan = new RecetaDulce("Flan", ["Huevos, Azucar, Leche, Vainilla"], 50, "Medio", "Dulce");
+let carneAsada = new RecetaSalada("Carne", ["Carne de Res, Especias, Tortillas"], 60, "facil", "Salado")
+
+console.log(flan);
+console.log(carneAsada);
+
+flan.preparar();
+carneAsada.preparar();
+
+recetario.agregarReceta(flan);
+recetario.agregarReceta(carneAsada);
+
+recetario.listarReceta();
+recetario.buscarPorDificultad("facil")  

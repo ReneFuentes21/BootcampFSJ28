@@ -28,7 +28,7 @@ export class Coach extends AcademiaKodigo{
 
 
 }
-/**
+
 export let docente = new Coach ("Kenia Paz", 21, "Salvadoreña", "kenia@gmail.com", "Full Time", 
-    "[JavaDeveloper, FullStackJr, Data Analytics]", 
-    "[JavaScript, PHP, CSS]") */
+    ["JavaDeveloper, FullStackJr, Data Analytics"], 
+    ["JavaScript, PHP, CSS"]) 
