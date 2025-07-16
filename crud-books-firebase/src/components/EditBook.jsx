@@ -67,7 +67,6 @@ export default function EditBook() {
                 setValue("author", data_book.author)
                 setValue("description", data_book.description)
             }
-            
             }
             //obteniendo la informacion del libro
             getBookById()
